@@ -1754,26 +1754,25 @@
         "transportUrl": "https://stremio-addon-titlovi.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
         "transportName": "",
         "manifest": {
-  "id": "com.github.titlovi-unofficial.stremio",
-  "version": "0.0.1",
-  "name": "Titlovi.com Unofficial",
-  "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
-  "types": [
-    "movie",
-    "series"
-  ],
-  "resources": [
-    "subtitles"
-  ],
-  "catalogs": [],
-  "idPrefixes": [
-    "tt"
-  ],
-  "behaviourHints": {
-    "configurable": true,
-    "configurationRequired": false
-  }
-},
+        "id": "com.github.titlovi-unofficial.stremio",
+        "version": "0.0.1",
+        "name": "Titlovi.com Unofficial",
+        "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
+        "types": [
+        "movie",
+       "series"
+       ],
+       "resources": [
+       "subtitles"
+       ],
+       "catalogs": [],
+       "idPrefixes": [
+       "tt"
+       ],
+       "behaviourHints": {
+      "configurable": true,
+      "configurationRequired": false
+      },
       {
         "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
         "transportName": "",
