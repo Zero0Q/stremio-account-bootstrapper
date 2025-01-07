@@ -584,7 +584,7 @@
         {
           "id": "trakt_list:zeroq:29905824:rank,asc",
           "type": "trakt",
-          "name": "New Releases On Stremio",
+          "name": "Latest Releases On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -620,9 +620,9 @@
           ]
         },
         {
-          "id": "trakt_list:garycrawfordgc:20370350:released,asc",
+          "id": "trakt_list:zeroq:30049612:random,asc",
           "type": "trakt",
-          "name": "Latest TV Shows",
+          "name": "Based On Watched On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -658,9 +658,9 @@
           ]
         },
         {
-          "id": "trakt_list:rizreflects:22054903:rank,asc",
+          "id": "trakt_list:zeroq:27951326:random,asc",
           "type": "trakt",
-          "name": "Trending Movies",
+          "name": "Certified Fresh On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -696,9 +696,9 @@
           ]
         },
         {
-          "id": "trakt_list:rizreflects:25252111:rank,asc",
+          "id": "trakt_list:zeroq:30049586:random,asc",
           "type": "trakt",
-          "name": "Trending TV Shows",
+          "name": "Recommended On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -734,9 +734,9 @@
           ]
         },
         {
-          "id": "trakt_list:garycrawfordgc:20388873:released,asc",
+          "id": "trakt_list:zeroq:30049606:random,asc",
           "type": "trakt",
-          "name": "Top Movies of the Week",
+          "name": "Trending On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -772,9 +772,9 @@
           ]
         },
         {
-          "id": "trakt_list:garycrawfordgc:20764770:released,asc",
+          "id": "trakt_list:zeroq:29993601:random,asc",
           "type": "trakt",
-          "name": "Netflix - Movies",
+          "name": "Foreign Releases On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -810,9 +810,9 @@
           ]
         },
         {
-          "id": "trakt_list:garycrawfordgc:20764471:released,asc",
+          "id": "trakt_list:zeroq:29993661:random,asc",
           "type": "trakt",
-          "name": "Netflix - TV Shows",
+          "name": "Ex-Yu Releases On Stremio",
           "extra": [
             {
               "name": "genre",
@@ -848,9 +848,9 @@
           ]
         },
         {
-          "id": "trakt_list:garycrawfordgc:20764798:released,asc",
+          "id": "trakt_list:zeroq:27503223:rank,asc",
           "type": "trakt",
-          "name": "Disney+ - Movies",
+          "name": "Upcoming On Stremio",
           "extra": [
             {
               "name": "genre",
