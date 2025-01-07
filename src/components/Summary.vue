@@ -18,9 +18,13 @@
         <img src="/public/logos/trakt.png" alt="Trakt TV" />
         <p>Trakt TV</p>
       </div>
-      <div class="col-2 text-center">
+            <div class="col-2 text-center">
         <img src="/public/logos/cinemeta.png" alt="Cinemeta" />
         <p>Cinemeta</p>
+    </div>
+      <div class="col-2 text-center">
+        <img src="/public/logos/titlovi.png" alt="Titlovi" />
+        <p>Titlovi</p>
     </div>
     <div class="row">
       <div class="col-2 text-center">
