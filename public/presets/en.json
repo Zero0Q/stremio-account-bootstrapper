@@ -6,7 +6,7 @@
     "transportName": "",
     "manifest": {
       "id": "com.linvo.cinemeta",
-      "version": "3.0.13",
+      "version": "9.9.9",
       "name": "Cinemeta",
       "contactEmail": null,
       "description": "The official addon for movie and series catalogs",
@@ -26,93 +26,26 @@
       ],
       "catalogs": [
         {
-          "id": "top",
+          "id": "cinemeta.search",
           "type": "movie",
-          "name": "Popular",
+          "name": "Search",
           "extra": [
-            {
-              "name": "genre",
-              "isRequired": false,
-              "options": [
-                "Action",
-                "Adventure",
-                "Animation",
-                "Biography",
-                "Comedy",
-                "Crime",
-                "Documentary",
-                "Drama",
-                "Family",
-                "Fantasy",
-                "History",
-                "Horror",
-                "Mystery",
-                "Romance",
-                "Sci-Fi",
-                "Sport",
-                "Thriller",
-                "War",
-                "Western"
-              ],
-              "optionsLimit": 1
-            },
             {
               "name": "search",
               "isRequired": true,
-              "options": [],
-              "optionsLimit": 1
-            },
-            {
-              "name": "skip",
-              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
           ]
         },
         {
-          "id": "top",
+          "id": "cinemeta.search",
           "type": "series",
-          "name": "Popular",
+          "name": "Search",
           "extra": [
-            {
-              "name": "genre",
-              "isRequired": false,
-              "options": [
-                "Action",
-                "Adventure",
-                "Animation",
-                "Biography",
-                "Comedy",
-                "Crime",
-                "Documentary",
-                "Drama",
-                "Family",
-                "Fantasy",
-                "History",
-                "Horror",
-                "Mystery",
-                "Romance",
-                "Sci-Fi",
-                "Sport",
-                "Thriller",
-                "War",
-                "Western",
-                "Reality-TV",
-                "Talk-Show",
-                "Game-Show"
-              ],
-              "optionsLimit": 1
-            },
             {
               "name": "search",
               "isRequired": true,
-              "options": [],
-              "optionsLimit": 1
-            },
-            {
-              "name": "skip",
-              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
@@ -127,7 +60,6 @@
               "name": "genre",
               "isRequired": true,
               "options": [
-                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -253,7 +185,6 @@
               "name": "genre",
               "isRequired": true,
               "options": [
-                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -337,7 +268,7 @@
           "extra": [
             {
               "name": "genre",
-              "isRequired": false,
+              "isRequired": true,
               "options": [
                 "Action",
                 "Adventure",
@@ -366,12 +297,6 @@
               "isRequired": false,
               "options": [],
               "optionsLimit": 1
-            },
-            {
-              "name": "search",
-              "isRequired": true,
-              "options": [],
-              "optionsLimit": 1
             }
           ]
         },
@@ -382,7 +307,7 @@
           "extra": [
             {
               "name": "genre",
-              "isRequired": false,
+              "isRequired": true,
               "options": [
                 "Action",
                 "Adventure",
@@ -414,10 +339,97 @@
               "isRequired": false,
               "options": [],
               "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "top",
+          "type": "movie",
+          "name": "Popular",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": true,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
             },
             {
               "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "top",
+          "type": "series",
+          "name": "Popular",
+          "extra": [
+            {
+              "name": "genre",
               "isRequired": true,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western",
+                "Reality-TV",
+                "Talk-Show",
+                "Game-Show"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
