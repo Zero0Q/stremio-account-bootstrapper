@@ -923,41 +923,6 @@
     }
   },
   {
-    "transportUrl": "https://titlovi-unofficial-addon-production.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
-    "transportName": "",
-    "manifest": {
-      "id": "com.github.titlovi-unofficial.stremio",
-      "version": "0.0.1",
-      "name": "Titlovi.com Unofficial",
-      "contactEmail": null,
-      "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
-      "logo": null,
-      "background": null,
-      "types": [
-        "movie",
-        "series"
-      ],
-      "resources": [
-        "subtitles"
-      ],
-      "idPrefixes": [
-        "tt"
-      ],
-      "catalogs": [],
-      "addonCatalogs": [],
-      "behaviorHints": {
-        "adult": false,
-        "p2p": false,
-        "configurable": false,
-        "configurationRequired": false
-      }
-    },
-    "flags": {
-      "official": false,
-      "protected": false
-    }
-  },
-  {
     "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown|limit=10{{it.transportUrl}}/manifest.json",
     "transportName": "",
     "manifest": {
@@ -1001,7 +966,42 @@
       "official": false,
       "protected": false
         }
+      },
+  {
+    "transportUrl": "https://titlovi-unofficial-addon-production.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.github.titlovi-unofficial.stremio",
+      "version": "0.0.1",
+      "name": "Titlovi.com Unofficial",
+      "contactEmail": null,
+      "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
       }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+    }   
     ]
   }
 }
