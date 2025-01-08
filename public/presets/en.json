@@ -1,12 +1,12 @@
 {
   "result": {
     "addons": [
-  {
+      {
     "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
     "transportName": "",
     "manifest": {
       "id": "com.linvo.cinemeta",
-      "version": "3.0.12",
+      "version": "3.0.13",
       "name": "Cinemeta",
       "contactEmail": null,
       "description": "The official addon for movie and series catalogs",
@@ -26,26 +26,93 @@
       ],
       "catalogs": [
         {
-          "id": "cinemeta.search",
+          "id": "top",
           "type": "movie",
-          "name": "Search",
+          "name": "Popular",
           "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western"
+              ],
+              "optionsLimit": 1
+            },
             {
               "name": "search",
               "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
           ]
         },
         {
-          "id": "cinemeta.search",
+          "id": "top",
           "type": "series",
-          "name": "Search",
+          "name": "Popular",
           "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Biography",
+                "Comedy",
+                "Crime",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Fantasy",
+                "History",
+                "Horror",
+                "Mystery",
+                "Romance",
+                "Sci-Fi",
+                "Sport",
+                "Thriller",
+                "War",
+                "Western",
+                "Reality-TV",
+                "Talk-Show",
+                "Game-Show"
+              ],
+              "optionsLimit": 1
+            },
             {
               "name": "search",
               "isRequired": true,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
@@ -60,6 +127,7 @@
               "name": "genre",
               "isRequired": true,
               "options": [
+                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -185,6 +253,7 @@
               "name": "genre",
               "isRequired": true,
               "options": [
+                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -268,7 +337,7 @@
           "extra": [
             {
               "name": "genre",
-              "isRequired": true,
+              "isRequired": false,
               "options": [
                 "Action",
                 "Adventure",
@@ -295,6 +364,12 @@
             {
               "name": "skip",
               "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            },
+            {
+              "name": "search",
+              "isRequired": true,
               "options": [],
               "optionsLimit": 1
             }
@@ -307,7 +382,7 @@
           "extra": [
             {
               "name": "genre",
-              "isRequired": true,
+              "isRequired": false,
               "options": [
                 "Action",
                 "Adventure",
@@ -339,97 +414,10 @@
               "isRequired": false,
               "options": [],
               "optionsLimit": 1
-            }
-          ]
-        },
-        {
-          "id": "top",
-          "type": "movie",
-          "name": "Popular",
-          "extra": [
-            {
-              "name": "genre",
-              "isRequired": true,
-              "options": [
-                "Action",
-                "Adventure",
-                "Animation",
-                "Biography",
-                "Comedy",
-                "Crime",
-                "Documentary",
-                "Drama",
-                "Family",
-                "Fantasy",
-                "History",
-                "Horror",
-                "Mystery",
-                "Romance",
-                "Sci-Fi",
-                "Sport",
-                "Thriller",
-                "War",
-                "Western"
-              ],
-              "optionsLimit": 1
             },
             {
               "name": "search",
-              "isRequired": false,
-              "options": [],
-              "optionsLimit": 1
-            },
-            {
-              "name": "skip",
-              "isRequired": false,
-              "options": [],
-              "optionsLimit": 1
-            }
-          ]
-        },
-        {
-          "id": "top",
-          "type": "series",
-          "name": "Popular",
-          "extra": [
-            {
-              "name": "genre",
               "isRequired": true,
-              "options": [
-                "Action",
-                "Adventure",
-                "Animation",
-                "Biography",
-                "Comedy",
-                "Crime",
-                "Documentary",
-                "Drama",
-                "Family",
-                "Fantasy",
-                "History",
-                "Horror",
-                "Mystery",
-                "Romance",
-                "Sci-Fi",
-                "Sport",
-                "Thriller",
-                "War",
-                "Western",
-                "Reality-TV",
-                "Talk-Show",
-                "Game-Show"
-              ],
-              "optionsLimit": 1
-            },
-            {
-              "name": "search",
-              "isRequired": false,
-              "options": [],
-              "optionsLimit": 1
-            },
-            {
-              "name": "skip",
-              "isRequired": false,
               "options": [],
               "optionsLimit": 1
             }
@@ -559,7 +547,7 @@
     "manifest": {
       "id": "community.trakt-tv",
       "version": "0.2.7",
-      "name": "Trakt Tv",
+      "name": "Trakt Tv ",
       "contactEmail": null,
       "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.",
       "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
@@ -900,52 +888,42 @@
     }
   },
   {
-    "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex%7Csort=qualitysize%7Cqualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown%7Cdebridoptions=nodownloadlinks,nocatalog/manifest.json",
+    "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
     "transportName": "",
     "manifest": {
-      "id": "com.stremio.torrentio.addon",
-      "version": "0.0.14",
-      "name": "Torrentio ",
+      "id": "org.stremio.opensubtitlesv3",
+      "version": "1.0.0",
+      "name": "OpenSubtitles v3",
       "contactEmail": null,
-      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(-), MejorTorrent(+), Wolfmax4k(+), Cinecalidad(+). To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/Put.io support and other settings visit https://torrentio.strem.fun",
-      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
-      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "description": "OpenSubtitles v3 Addon for Stremio",
+      "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
+      "background": null,
       "types": [
         "movie",
-        "series",
-        "anime",
-        "other"
+        "series"
       ],
       "resources": [
-        {
-          "name": "stream",
-          "types": [
-            "movie",
-            "series"
-          ],
-          "idPrefixes": [
-            "tt",
-            "kitsu"
-          ]
-        }
+        "subtitles"
       ],
-      "idPrefixes": null,
+      "idPrefixes": [
+        "tt"
+      ],
       "catalogs": [],
       "addonCatalogs": [],
       "behaviorHints": {
         "adult": false,
         "p2p": false,
-        "configurable": true,
+        "configurable": false,
         "configurationRequired": false
       }
     },
     "flags": {
-      "official": false,
+      "official": true,
       "protected": false
     }
   },
   {
-    "transportUrl": "https://stremio-addon-titlovi.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
+    "transportUrl": "https://titlovi-unofficial-addon-production.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
     "transportName": "",
     "manifest": {
       "id": "com.github.titlovi-unofficial.stremio",
@@ -980,40 +958,50 @@
     }
   },
   {
-    "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
+    "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex%7Csort=qualitysize%7Cqualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown%7Cdebridoptions=nodownloadlinks,nocatalog%7Crealdebrid=NUMVNOHUNWY6PZUCTYDO74OOXZ64VSCV4KQIEZAJOENRJKI4PYVQ/manifest.json",
     "transportName": "",
     "manifest": {
-      "id": "org.stremio.opensubtitlesv3",
-      "version": "1.0.0",
-      "name": "OpenSubtitles v3",
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio RD",
       "contactEmail": null,
-      "description": "OpenSubtitles v3 Addon for Stremio",
-      "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
-      "background": null,
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(-), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-) and RealDebrid enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
       "types": [
         "movie",
-        "series"
+        "series",
+        "anime",
+        "other"
       ],
       "resources": [
-        "subtitles"
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
       ],
-      "idPrefixes": [
-        "tt"
-      ],
+      "idPrefixes": null,
       "catalogs": [],
       "addonCatalogs": [],
       "behaviorHints": {
         "adult": false,
         "p2p": false,
-        "configurable": false,
+        "configurable": true,
         "configurationRequired": false
       }
     },
     "flags": {
-      "official": true,
+      "official": false,
       "protected": false
-    }
-  }
+        }
+      }
     ]
   }
 }
