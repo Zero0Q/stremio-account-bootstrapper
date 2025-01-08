@@ -6,7 +6,7 @@
     "transportName": "",
     "manifest": {
       "id": "com.linvo.cinemeta",
-      "version": "9.9.9",
+      "version": "6.6.6",
       "name": "Cinemeta",
       "contactEmail": null,
       "description": "The official addon for movie and series catalogs",
@@ -59,7 +59,8 @@
             {
               "name": "genre",
               "isRequired": true,
-              "options": [
+              "options": [              
+                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -185,6 +186,7 @@
               "name": "genre",
               "isRequired": true,
               "options": [
+                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -558,7 +560,7 @@
     "transportName": "",
     "manifest": {
       "id": "community.trakt-tv",
-      "version": "0.2.7",
+      "version": "6.6.6",
       "name": "Trakt Tv  ",
       "contactEmail": null,
       "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.",
@@ -939,7 +941,7 @@
     "transportName": "",
     "manifest": {
       "id": "com.stremio.torrentio.catalog.addon",
-      "version": "1.0.2",
+      "version": "6.6.6",
       "name": "Torrent Catalogs",
       "contactEmail": null,
       "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
@@ -958,7 +960,7 @@
         {
           "id": "top-movies",
           "type": "movie",
-          "name": "Top seeded",
+          "name": "Most Watched",
           "extra": [
             {
               "name": "genre",
@@ -984,7 +986,7 @@
         {
           "id": "top-series",
           "type": "series",
-          "name": "Top seeded",
+          "name": "Most Watched",
           "extra": [
             {
               "name": "genre",
@@ -1021,6 +1023,6 @@
       "protected": false
     }
   }
-]
+  ]
  }
 }
