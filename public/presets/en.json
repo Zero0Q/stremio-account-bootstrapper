@@ -938,47 +938,86 @@
     "transportUrl": "stremio://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex%7Csort=qualitysize%7Cqualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown%7Cdebridoptions=nodownloadlinks,nocatalog/manifest.json",
     "transportName": "",
     "manifest": {
-      "id": "com.stremio.torrentio.addon",
-      "version": "0.0.14",
-      "name": "Torrentio RD",
-      "contactEmail": null,
-      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(+), NyaaSi(+), TokyoTosho(+), AniDex(+), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(-), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-) and RealDebrid enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
-      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
-      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
-      "types": [
-        "movie",
-        "series",
-        "anime",
-        "other"
-      ],
-      "resources": [
+      "id": "com.stremio.torrentio.catalog.addon",
+  "version": "1.0.2",
+  "name": "Torrent Catalogs",
+  "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
+  "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+  "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+  "types": [
+    "movie",
+    "series",
+    "anime"
+  ],
+  "resources": [
+    "catalog"
+  ],
+  "catalogs": [
+    {
+      "id": "top-movies",
+      "type": "movie",
+      "name": "Top seeded",
+      "pageSize": 20,
+      "extra": [
         {
-          "name": "stream",
-          "types": [
-            "movie",
-            "series"
-          ],
-          "idPrefixes": [
-            "tt",
-            "kitsu"
+          "name": "genre",
+          "options": [
+            "Yesterday",
+            "This Week",
+            "Last Week",
+            "This Month",
+            "Last Month",
+            "All Time"
           ]
+        },
+        {
+          "name": "skip"
         }
       ],
-      "idPrefixes": null,
-      "catalogs": [],
-      "addonCatalogs": [],
-      "behaviorHints": {
-        "adult": false,
-        "p2p": false,
-        "configurable": true,
-        "configurationRequired": false
-      }
+      "genres": [
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "This Month",
+        "Last Month",
+        "All Time"
+      ]
     },
-    "flags": {
-      "official": false,
-      "protected": false
+    {
+      "id": "top-series",
+      "type": "series",
+      "name": "Top seeded",
+      "pageSize": 20,
+      "extra": [
+        {
+          "name": "genre",
+          "options": [
+            "Yesterday",
+            "This Week",
+            "Last Week",
+            "This Month",
+            "Last Month",
+            "All Time"
+          ]
+        },
+        {
+          "name": "skip"
         }
-      }   
+      ],
+      "genres": [
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "This Month",
+        "Last Month",
+        "All Time"
+      ]
+    },
+  "behaviorHints": {
+    "configurable": false,
+    "configurationRequired": false
+        }
+      }
     ]
   }
 }
