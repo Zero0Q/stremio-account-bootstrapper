@@ -935,10 +935,10 @@
     }
     },
   {
-    "transportUrl": "stremio://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex%7Csort=qualitysize%7Cqualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown%7Cdebridoptions=nodownloadlinks,nocatalog/manifest.json",
+    "transportUrl": "https://torrent-catalogs.strem.fun/manifest.json",
     "transportName": "",
     "manifest": {
-      "id": "com.stremio.torrentio.catalog.addon",
+    "id": "com.stremio.torrentio.catalog.addon",
   "version": "1.0.2",
   "name": "Torrent Catalogs",
   "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
