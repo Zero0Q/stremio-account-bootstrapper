@@ -554,6 +554,91 @@
     }
   },
   {
+  "transportUrl": "https://torrent-catalogs.strem.fun/manifest.json",
+  "transportName": "",
+  "manifest": {
+  "id": "com.stremio.torrentio.catalog.addon",
+  "version": "1.0.2",
+  "name": "Torrent Catalogs",
+  "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
+  "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+  "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+  "types": [
+    "movie",
+    "series",
+    "anime"
+  ],
+  "resources": [
+    "catalog"
+  ],
+  "catalogs": [
+    {
+      "id": "top-movies",
+      "type": "movie",
+      "name": "Top seeded",
+      "pageSize": 20,
+      "extra": [
+        {
+          "name": "genre",
+          "options": [
+            "Yesterday",
+            "This Week",
+            "Last Week",
+            "This Month",
+            "Last Month",
+            "All Time"
+          ]
+        },
+        {
+          "name": "skip"
+        }
+      ],
+      "genres": [
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "This Month",
+        "Last Month",
+        "All Time"
+      ]
+    },
+    {
+      "id": "top-series",
+      "type": "series",
+      "name": "Top seeded",
+      "pageSize": 20,
+      "extra": [
+        {
+          "name": "genre",
+          "options": [
+            "Yesterday",
+            "This Week",
+            "Last Week",
+            "This Month",
+            "Last Month",
+            "All Time"
+          ]
+        },
+        {
+          "name": "skip"
+        }
+      ],
+      "genres": [
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "This Month",
+        "Last Month",
+        "All Time"
+      ]
+    }
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "configurationRequired": false
+  }
+},
+  {
     "transportUrl": "https://2ecbbd610840-trakt.baby-beamup.club/eyJsaXN0cyI6W10sImlkcyI6WyJnYXJ5Y3Jhd2ZvcmRnYzpsYXRlc3QtcmVsZWFzZXM6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bGF0ZXN0LXR2LXNob3dzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOnRvcC1tb3ZpZXMtb2YtdGhlLXdlZWs6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bmV0ZmxpeC1tb3ZpZXM6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bmV0ZmxpeC1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpkaXNuZXktbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmRpc25leS1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzphbWF6b24tcHJpbWUtbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmFtYXpvbi1wcmltZS1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpodWx1LW1vdmllczpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpodWx1LXNob3dzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmhiby1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzphY3Rpb246cmVsZWFzZWQsYXNjIiwicml6cmVmbGVjdHM6YWR2ZW50dXJlLW1vdmllczpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czphbmltYXRpb246cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6Y29tZWR5OnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmNyaW1lOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmRyYW1hOnJlbGVhc2VkLGFzYyIsInJpenJlZmxlY3RzOmZhbnRhc3ktbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmhvcnJvcjpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czpteXN0ZXJ5LW1vdmllczpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czpyb21hbmNlOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOnNjaS1maTpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzp0aHJpbGxlcjpyZWxlYXNlZCxhc2MiXX0=/manifest.json",
     "transportName": "",
     "manifest": {
