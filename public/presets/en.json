@@ -673,7 +673,7 @@
         {
           "id": "trakt_list:zeroq:29905824:rank,asc",
           "type": "trakt",
-          "name": "Latest Releases On Stremio",
+          "name": "Latest Releases",
           "extra": [
             {
               "name": "genre",
@@ -711,7 +711,7 @@
         {
           "id": "trakt_list:zeroq:30049612:random,asc",
           "type": "trakt",
-          "name": "Based On Watched On Stremio",
+          "name": "Based On Watched",
           "extra": [
             {
               "name": "genre",
@@ -749,7 +749,7 @@
         {
           "id": "trakt_list:zeroq:27951326:random,asc",
           "type": "trakt",
-          "name": "Certified Fresh On Stremio",
+          "name": "Certified Fresh",
           "extra": [
             {
               "name": "genre",
@@ -787,7 +787,7 @@
         {
           "id": "trakt_list:zeroq:30049586:random,asc",
           "type": "trakt",
-          "name": "Recommended On Stremio",
+          "name": "Recommended",
           "extra": [
             {
               "name": "genre",
@@ -825,7 +825,7 @@
         {
           "id": "trakt_list:zeroq:30049606:random,asc",
           "type": "trakt",
-          "name": "Trending On Stremio",
+          "name": "Trending",
           "extra": [
             {
               "name": "genre",
@@ -863,7 +863,7 @@
         {
           "id": "trakt_list:zeroq:29993601:random,asc",
           "type": "trakt",
-          "name": "Foreign Releases On Stremio",
+          "name": "Foreign Releases",
           "extra": [
             {
               "name": "genre",
@@ -901,7 +901,7 @@
         {
           "id": "trakt_list:zeroq:29993661:random,asc",
           "type": "trakt",
-          "name": "ExYu Releases On Stremio",
+          "name": "ExYu Releases",
           "extra": [
             {
               "name": "genre",
@@ -939,7 +939,7 @@
         {
           "id": "trakt_list:zeroq:27503223:rank,asc",
           "type": "trakt",
-          "name": "Upcoming On Stremio",
+          "name": "Coming Soon",
           "extra": [
             {
               "name": "genre",
