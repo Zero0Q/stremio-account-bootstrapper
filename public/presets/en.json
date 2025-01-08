@@ -1012,13 +1012,12 @@
         "Last Month",
         "All Time"
       ]
-    }
-  ],
+    },
   "behaviorHints": {
     "configurable": false,
     "configurationRequired": false
-        }
-      }
-    ]
-  }
+    }
+   }
+  ]
+ }
 }
