@@ -1013,7 +1013,60 @@
       "official": false,
       "protected": false
     }
-    }   
+    },   
+      {
+        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
+        "transportName": "",
+        "manifest": {
+          "id": "org.stremio.local",
+          "version": "1.10.0",
+          "name": "Local Files (without catalog support)",
+          "contactEmail": null,
+          "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
+          "logo": null,
+          "background": null,
+          "types": [
+            "movie",
+            "series",
+            "other"
+          ],
+          "resources": [
+            {
+              "name": "meta",
+              "types": [
+                "other"
+              ],
+              "idPrefixes": [
+                "local:",
+                "bt:"
+              ]
+            },
+            {
+              "name": "stream",
+              "types": [
+                "movie",
+                "series"
+              ],
+              "idPrefixes": [
+                "tt"
+              ]
+            }
+          ],
+          "idPrefixes": null,
+          "catalogs": [],
+          "addonCatalogs": [],
+          "behaviorHints": {
+            "adult": false,
+            "p2p": false,
+            "configurable": false,
+            "configurationRequired": false
+          }
+        },
+        "flags": {
+          "official": true,
+          "protected": true
+        }
+      }
     ]
   }
 }
