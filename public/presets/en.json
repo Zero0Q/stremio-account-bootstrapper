@@ -812,7 +812,7 @@
         {
           "id": "trakt_list:zeroq:29993661:random,asc",
           "type": "trakt",
-          "name": "Ex - Yu Releases On Stremio",
+          "name": "ExYu Releases On Stremio",
           "extra": [
             {
               "name": "genre",
