@@ -937,8 +937,8 @@
   {
     "transportUrl": "https://torrent-catalogs.strem.fun/manifest.json",
     "transportName": "",
-    "manifest": {
-    "id": "com.stremio.torrentio.catalog.addon",
+    "manifest":{
+  "id": "com.stremio.torrentio.catalog.addon",
   "version": "1.0.2",
   "name": "Torrent Catalogs",
   "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
@@ -1013,11 +1013,42 @@
         "All Time"
       ]
     },
+    {
+      "id": "top-anime",
+      "type": "anime",
+      "name": "Top seeded",
+      "pageSize": 20,
+      "extra": [
+        {
+          "name": "genre",
+          "options": [
+            "Yesterday",
+            "This Week",
+            "Last Week",
+            "This Month",
+            "Last Month",
+            "All Time"
+          ]
+        },
+        {
+          "name": "skip"
+        }
+      ],
+      "genres": [
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "This Month",
+        "Last Month",
+        "All Time"
+      ]
+    }
+  ],
   "behaviorHints": {
     "configurable": false,
     "configurationRequired": false
-    }
-   }
+  }
+  }
   ]
  }
 }
