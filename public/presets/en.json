@@ -978,6 +978,93 @@
       "official": false,
       "protected": false
     }
+  },
+  {
+    "transportUrl": "https://torrent-catalogs.strem.fun/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.stremio.torrentio.catalog.addon",
+      "version": "1.0.2",
+      "name": "Torrent Catalogs",
+      "contactEmail": null,
+      "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "types": [
+        "movie",
+        "series",
+        "anime"
+      ],
+      "resources": [
+        "catalog"
+      ],
+      "idPrefixes": null,
+      "catalogs": [
+        {
+          "id": "top-movies",
+          "type": "movie",
+          "name": "Top seeded",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Yesterday",
+                "This Week",
+                "Last Week",
+                "This Month",
+                "Last Month",
+                "All Time"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "top-series",
+          "type": "series",
+          "name": "Top seeded",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "Yesterday",
+                "This Week",
+                "Last Week",
+                "This Month",
+                "Last Month",
+                "All Time"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
   }
 ]
  }
