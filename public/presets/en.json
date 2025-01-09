@@ -434,7 +434,7 @@
     }
   },
       {
-        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,horriblesubs,nyaasi,tokyotosho,anidex|qualityfilter=scr,cam,unknown|limit=10{{it.transportUrl}}/manifest.json",
+        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown/manifest.json",
         "transportName": "",
         "manifest": {
           "id": "com.stremio.torrentio.addon",
@@ -445,10 +445,10 @@
           "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
           "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
           "types": [
-            "movie",
-            "series",
-            "anime",
-            "other"
+          "movie",
+          "series",
+          "anime",
+          "other"
           ],
           "resources": [
             {
