@@ -709,7 +709,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049612:random,asc",
+          "id": "trakt_list:zeroq:30049612:rank,asc",
           "type": "trakt",
           "name": "Based On Watched",
           "extra": [
@@ -747,7 +747,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:27951326:random,asc",
+          "id": "trakt_list:zeroq:27951326:rank,asc",
           "type": "trakt",
           "name": "Certified Fresh",
           "extra": [
@@ -785,7 +785,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049586:random,asc",
+          "id": "trakt_list:zeroq:30049586:rank,asc",
           "type": "trakt",
           "name": "Recommended",
           "extra": [
@@ -823,7 +823,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049606:random,asc",
+          "id": "trakt_list:zeroq:30049606:rank,asc",
           "type": "trakt",
           "name": "Trending",
           "extra": [
@@ -861,7 +861,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:29993601:random,asc",
+          "id": "trakt_list:zeroq:29993601:rank,asc",
           "type": "trakt",
           "name": "Foreign Releases",
           "extra": [
@@ -899,7 +899,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:29993661:random,asc",
+          "id": "trakt_list:zeroq:29993661:rank,asc",
           "type": "trakt",
           "name": "ExYu Releases",
           "extra": [
