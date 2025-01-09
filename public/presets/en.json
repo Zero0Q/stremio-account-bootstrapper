@@ -1,7 +1,10 @@
 {
   "result": {
     "addons": [
-      {
+  {
+    "transportUrl": "https://torrent-catalogs.strem.fun/manifest.json",
+    "transportName": "",
+    "manifest": {
   "id": "com.stremio.torrentio.catalog.addon",
   "version": "6.6.6",
   "name": "Torrent Catalogs",
