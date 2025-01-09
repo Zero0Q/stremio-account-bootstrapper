@@ -25,7 +25,7 @@
         {
           "id": "top-movies",
           "type": "movie",
-          "name": "Top seeded",
+          "name": "Most Watched",
           "extra": [
             {
               "name": "genre",
@@ -51,33 +51,7 @@
         {
           "id": "top-series",
           "type": "series",
-          "name": "Top seeded",
-          "extra": [
-            {
-              "name": "genre",
-              "isRequired": false,
-              "options": [
-                "Yesterday",
-                "This Week",
-                "Last Week",
-                "This Month",
-                "Last Month",
-                "All Time"
-              ],
-              "optionsLimit": 1
-            },
-            {
-              "name": "skip",
-              "isRequired": false,
-              "options": [],
-              "optionsLimit": 1
-            }
-          ]
-        },
-        {
-          "id": "top-anime",
-          "type": "anime",
-          "name": "Top seeded",
+          "name": "Most Watched",
           "extra": [
             {
               "name": "genre",
