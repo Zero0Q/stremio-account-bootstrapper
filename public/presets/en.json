@@ -3,7 +3,7 @@
     "addons": [
 {
   "id": "com.stremio.torrentio.catalog.addon",
-  "version": "1.0.2",
+  "version": "6.6.6",
   "name": "Torrent Catalogs",
   "contactEmail": null,
   "description": "Provides catalogs for movies/series/anime based on top seeded torrents. Requires Kitsu addon for anime.",
