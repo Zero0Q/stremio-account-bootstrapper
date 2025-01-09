@@ -1259,6 +1259,7 @@
               "name": "genre",
               "isRequired": true,
               "options": [
+                "2025",
                 "2024",
                 "2023",
                 "2022",
@@ -1384,6 +1385,7 @@
               "name": "genre",
               "isRequired": true,
               "options": [
+                "2025",
                 "2024",
                 "2023",
                 "2022",
