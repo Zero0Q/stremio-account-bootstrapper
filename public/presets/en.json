@@ -437,20 +437,12 @@
         "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown/manifest.json",
         "transportName": "",
         "manifest": {
-          "id": "com.stremio.torrentio.addon",
-          "version": "0.0.14",
-          "name": "Torrentio",
-          "contactEmail": null,
-          "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(-), NyaaSi(-), TokyoTosho(-), AniDex(-), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(-), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-). To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/Put.io support and other settings visit https://torrentio.strem.fun",
-          "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
-          "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
-          "types": [
-            "movie",
-            "series",
-            "anime",
-            "other"
-          ],
-          "resources": [
+  "id": "com.stremio.torrentio.addon",
+  "version": "0.0.14",
+  "name": "Torrentio",
+  "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(-), NyaaSi(-), TokyoTosho(-), AniDex(-), Rutor(-), Rutracker(-), Comando(-), BluDV(-), Torrent9(-), ilCorSaRoNeRo(-), MejorTorrent(-), Wolfmax4k(-), Cinecalidad(-). To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/TorBox/Put.io support and other settings visit https://torrentio.strem.fun",
+  "catalogs": [],
+  "resources": [
     {
       "name": "stream",
       "types": [
@@ -473,9 +465,9 @@
   "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
   "behaviorHints": {
     "configurable": true,
-        "configurationRequired": false
-      }
-    },
+    "configurationRequired": false
+  }
+},
     "flags": {
       "official": false,
       "protected": false
