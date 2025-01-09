@@ -147,7 +147,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049612:random,asc",
+          "id": "trakt_list:zeroq:30049612:rank,asc",
           "type": "trakt",
           "name": "Based On Watched On Stremio",
           "extra": [
@@ -185,7 +185,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:27951326:random,asc",
+          "id": "trakt_list:zeroq:27951326:rank,asc",
           "type": "trakt",
           "name": "Certified Fresh On Stremio",
           "extra": [
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049586:random,asc",
+          "id": "trakt_list:zeroq:30049586:rank,asc",
           "type": "trakt",
           "name": "Recommended On Stremio",
           "extra": [
@@ -261,7 +261,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:30049606:random,asc",
+          "id": "trakt_list:zeroq:30049606:rank,asc",
           "type": "trakt",
           "name": "Trending On Stremio",
           "extra": [
@@ -299,7 +299,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:29993601:random,asc",
+          "id": "trakt_list:zeroq:29993601:rank,asc",
           "type": "trakt",
           "name": "Foreign Releases On Stremio",
           "extra": [
@@ -337,7 +337,7 @@
           ]
         },
         {
-          "id": "trakt_list:zeroq:29993661:random,asc",
+          "id": "trakt_list:zeroq:29993661:rank,asc",
           "type": "trakt",
           "name": "ExYu Releases On Stremio",
           "extra": [
