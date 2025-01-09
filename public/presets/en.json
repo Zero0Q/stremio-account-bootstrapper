@@ -445,10 +445,10 @@
           "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
           "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
           "types": [
-          "movie",
-          "series",
-          "anime",
-          "other"
+            "movie",
+            "series",
+            "anime",
+            "other"
           ],
           "resources": [
             {
