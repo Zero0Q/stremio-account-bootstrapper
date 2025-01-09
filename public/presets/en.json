@@ -3,1110 +3,385 @@
     "addons": [
       {
         "transportUrl": "https://2ecbbd610840-trakt.baby-beamup.club/eyJsaXN0cyI6W10sImlkcyI6WyJnYXJ5Y3Jhd2ZvcmRnYzpsYXRlc3QtcmVsZWFzZXM6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bGF0ZXN0LXR2LXNob3dzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOnRvcC1tb3ZpZXMtb2YtdGhlLXdlZWs6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bmV0ZmxpeC1tb3ZpZXM6cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6bmV0ZmxpeC1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpkaXNuZXktbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmRpc25leS1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzphbWF6b24tcHJpbWUtbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmFtYXpvbi1wcmltZS1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpodWx1LW1vdmllczpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzpodWx1LXNob3dzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmhiby1zaG93czpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzphY3Rpb246cmVsZWFzZWQsYXNjIiwicml6cmVmbGVjdHM6YWR2ZW50dXJlLW1vdmllczpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czphbmltYXRpb246cmVsZWFzZWQsYXNjIiwiZ2FyeWNyYXdmb3JkZ2M6Y29tZWR5OnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmNyaW1lOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmRyYW1hOnJlbGVhc2VkLGFzYyIsInJpenJlZmxlY3RzOmZhbnRhc3ktbW92aWVzOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOmhvcnJvcjpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czpteXN0ZXJ5LW1vdmllczpyZWxlYXNlZCxhc2MiLCJyaXpyZWZsZWN0czpyb21hbmNlOnJlbGVhc2VkLGFzYyIsImdhcnljcmF3Zm9yZGdjOnNjaS1maTpyZWxlYXNlZCxhc2MiLCJnYXJ5Y3Jhd2ZvcmRnYzp0aHJpbGxlcjpyZWxlYXNlZCxhc2MiXX0=/manifest.json",
-        "transportName": "",
-        "manifest": {
-          "id": "community.trakt-tv",
-          "version": "0.2.7",
-          "name": "Trakt Tv",
-          "contactEmail": null,
-          "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.",
-          "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
-          "background": "https://2ecbbd610840-trakt.baby-beamup.club/public/background.png?ver=0.2.7",
-          "types": [],
-          "resources": [
-            {
-              "name": "meta",
-              "types": [
-                "series",
-                "movie"
-              ],
-              "idPrefixes": [
-                "trakt:"
-              ]
-            }
+    "transportName": "",
+    "manifest": {
+      "id": "community.trakt-tv",
+      "version": "0.2.7",
+      "name": "Trakt Tv  ",
+      "contactEmail": null,
+      "description": "Addon for getting Trakt's public and user lists, recommendations and watch list.",
+      "logo": "https://2ecbbd610840-trakt.baby-beamup.club/public/logoPS.png?ver=0.2.7",
+      "background": "https://2ecbbd610840-trakt.baby-beamup.club/public/background.png?ver=0.2.7",
+      "types": [],
+      "resources": [
+        {
+          "name": "meta",
+          "types": [
+            "series",
+            "movie"
           ],
           "idPrefixes": [
-            "trakt"
-          ],
-          "catalogs": [
-            {
-              "id": "trakt_list:rizreflects:22054903:rank,asc",
-              "type": "trakt",
-              "name": "Trending Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:25252111:rank,asc",
-              "type": "trakt",
-              "name": "Trending TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:leepmc1984:26287700:released,asc",
-              "type": "trakt",
-              "name": "Latest Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20370350:released,asc",
-              "type": "trakt",
-              "name": "Latest TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20388873:released,asc",
-              "type": "trakt",
-              "name": "Top Movies of the Week",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764770:released,asc",
-              "type": "trakt",
-              "name": "Netflix - Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764471:released,asc",
-              "type": "trakt",
-              "name": "Netflix - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764798:released,asc",
-              "type": "trakt",
-              "name": "Disney+ - Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764592:released,asc",
-              "type": "trakt",
-              "name": "Disney+ - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764771:released,asc",
-              "type": "trakt",
-              "name": "Amazon Prime - Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764575:released,asc",
-              "type": "trakt",
-              "name": "Amazon Prime - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764807:released,asc",
-              "type": "trakt",
-              "name": "Hulu - Movies",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764580:released,asc",
-              "type": "trakt",
-              "name": "Hulu - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20764504:released,asc",
-              "type": "trakt",
-              "name": "Max - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:adamosborne01:22490340:released,asc",
-              "type": "trakt",
-              "name": "Apple TV+ - TV Shows",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770323:released,asc",
-              "type": "trakt",
-              "name": "Action",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:22032399:released,asc",
-              "type": "trakt",
-              "name": "Adventure",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:20686250:released,asc",
-              "type": "trakt",
-              "name": "Animation",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770336:released,asc",
-              "type": "trakt",
-              "name": "Comedy",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770341:released,asc",
-              "type": "trakt",
-              "name": "Crime",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:20700238:released,asc",
-              "type": "trakt",
-              "name": "Documentaries",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770267:released,asc",
-              "type": "trakt",
-              "name": "Drama",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:22033383:released,asc",
-              "type": "trakt",
-              "name": "Fantasy",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770365:released,asc",
-              "type": "trakt",
-              "name": "Horror",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:22033404:released,asc",
-              "type": "trakt",
-              "name": "Mystery",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:rizreflects:20700252:released,asc",
-              "type": "trakt",
-              "name": "Romance",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20872066:released,asc",
-              "type": "trakt",
-              "name": "Sci-Fi",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            },
-            {
-              "id": "trakt_list:garycrawfordgc:20770413:released,asc",
-              "type": "trakt",
-              "name": "Thriller",
-              "extra": [
-                {
-                  "name": "genre",
-                  "isRequired": false,
-                  "options": [
-                    "added asc",
-                    "added desc",
-                    "title asc",
-                    "title desc",
-                    "released asc",
-                    "released desc",
-                    "runtime asc",
-                    "runtime desc",
-                    "votes asc",
-                    "votes desc",
-                    "rating asc",
-                    "rating desc",
-                    "rank asc",
-                    "rank desc",
-                    "popularity asc",
-                    "popularity desc",
-                    "random asc",
-                    "random desc"
-                  ],
-                  "optionsLimit": 1
-                },
-                {
-                  "name": "skip",
-                  "isRequired": false,
-                  "options": [],
-                  "optionsLimit": 1
-                }
-              ]
-            }
-          ],
-          "addonCatalogs": [],
-          "behaviorHints": {
-            "adult": false,
-            "p2p": false,
-            "configurable": true,
-            "configurationRequired": false
-          }
-        },
-        "flags": {
-          "official": false,
-          "protected": false
+            "trakt:"
+          ]
         }
-      },
+      ],
+      "idPrefixes": [
+        "trakt"
+      ],
+      "catalogs": [
+        {
+          "id": "trakt_list:zeroq:29905824:rank,asc",
+          "type": "trakt",
+          "name": "Latest Releases On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:30049612:random,asc",
+          "type": "trakt",
+          "name": "Based On Watched On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:27951326:random,asc",
+          "type": "trakt",
+          "name": "Certified Fresh On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:30049586:random,asc",
+          "type": "trakt",
+          "name": "Recommended On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:30049606:random,asc",
+          "type": "trakt",
+          "name": "Trending On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:29993601:random,asc",
+          "type": "trakt",
+          "name": "Foreign Releases On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:29993661:random,asc",
+          "type": "trakt",
+          "name": "ExYu Releases On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        },
+        {
+          "id": "trakt_list:zeroq:27503223:rank,asc",
+          "type": "trakt",
+          "name": "Upcoming On Stremio",
+          "extra": [
+            {
+              "name": "genre",
+              "isRequired": false,
+              "options": [
+                "added asc",
+                "added desc",
+                "title asc",
+                "title desc",
+                "released asc",
+                "released desc",
+                "runtime asc",
+                "runtime desc",
+                "votes asc",
+                "votes desc",
+                "rating asc",
+                "rating desc",
+                "rank asc",
+                "rank desc",
+                "popularity asc",
+                "popularity desc",
+                "random asc",
+                "random desc"
+              ],
+              "optionsLimit": 1
+            },
+            {
+              "name": "skip",
+              "isRequired": false,
+              "options": [],
+              "optionsLimit": 1
+            }
+          ]
+        }
+      ],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": true,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
+  {
+    "transportUrl": "https://titlovi-unofficial-addon-production.up.railway.app/eyJ1c2VybmFtZSI6Inplcm9xIiwicGFzc3dvcmQiOiJNQHJzTG9raSJ9/manifest.json",
+    "transportName": "",
+    "manifest": {
+      "id": "com.github.titlovi-unofficial.stremio",
+      "version": "0.0.1",
+      "name": "Titlovi.com Unofficial",
+      "contactEmail": null,
+      "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
+      "logo": null,
+      "background": null,
+      "types": [
+        "movie",
+        "series"
+      ],
+      "resources": [
+        "subtitles"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [],
+      "addonCatalogs": [],
+      "behaviorHints": {
+        "adult": false,
+        "p2p": false,
+        "configurable": false,
+        "configurationRequired": false
+      }
+    },
+    "flags": {
+      "official": false,
+      "protected": false
+    }
+  },
       {
         "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown/manifest.json",
         "transportName": "",
