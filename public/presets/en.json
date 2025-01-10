@@ -443,7 +443,7 @@
       "name": "Titlovi.com Unofficial",
       "contactEmail": null,
       "description": "Unofficial addon for fetching subtitles from Titlovi.com.",
-      "logo": null,
+      "logo": "https://stremio-account-bootstrapper-three.vercel.app/assets/titlovi.png",
       "background": null,
       "types": [
         "movie",
