@@ -66,6 +66,11 @@
         <img src="/public/logos/opensubtitles.png" alt="OpenSubtitles v3" />
         <p>OpenSubtitles v3</p>
       </div>
+          <div class="row">
+      <div class="col-2 text-center">
+        <img src="/public/logos/titlovi.png" alt="Titlovi" />
+        <p>Titlovi</p>
+      </div>
       <div class="col-2 text-center">
         <img src="/public/logos/opensubtitlespro.png" alt="OpenSubtitles Pro" />
         <p>OpenSubtitles Pro</p>
