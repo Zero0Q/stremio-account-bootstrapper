@@ -1151,7 +1151,7 @@
           "name": "Jackettio",
           "contactEmail": null,
           "description": "Stremio addon that resolve streams using Jackett and Debrid. It seamlessly integrates with private trackers.",
-          "logo": null,
+          "logo": "https://stremio-account-bootstrapper-three.vercel.app/assets/jackettio-AMaHAiLX.png",
           "background": null,
           "types": [
             "movie",
@@ -1347,7 +1347,7 @@
       "name": "Cinemeta",
       "contactEmail": null,
       "description": "The official addon for movie and series catalogs",
-      "logo": null,
+      "logo": "https://stremio-account-bootstrapper-three.vercel.app/assets/cinemeta-EKDsVm1S.png",
       "background": null,
       "types": [
         "movie",
