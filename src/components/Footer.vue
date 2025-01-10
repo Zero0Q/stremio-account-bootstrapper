@@ -2,9 +2,9 @@
 
 <template>
   <div class="is-horizontal-align footer">
-    <p>Brought to you with ❤️ by DryKillLogic</p>
+    <p>Brought to you with ❤️ by Zer0Q</p>
     <a
-      href="https://github.com/DryKillLogic/stremio-account-bootstrapper"
+      href="https://stremio-account-bootstrapper-three.vercel.app"
       target="_blank"
       >Source Code</a
     >
