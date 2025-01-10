@@ -470,7 +470,7 @@
     }
   },
       {
-        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown|debridoptions=nodownloadlinks,nocatalog|realdebrid="`${debridApiUrl}`"/manifest.json",
+        "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl|sort=qualitysize|qualityfilter=brremux,hdrall,dolbyvision,dolbyvisionwithhdr,threed,scr,cam,unknown|debridoptions=nodownloadlinks,nocatalog|realdebrid=`${debridApiUrl}`/manifest.json",
         "transportName": "",
         "manifest": {
           "id": "com.stremio.torrentio.addon",
