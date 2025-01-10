@@ -2374,7 +2374,7 @@
           "name": "Local Files (without catalog support)",
           "contactEmail": null,
           "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
-          "logo": null,
+          "logo": "https://stremio-account-bootstrapper-three.vercel.app/assets/localfiles-YcOWPCgj.png",
           "background": null,
           "types": [
             "movie",
